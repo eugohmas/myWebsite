@@ -1,0 +1,234 @@
+/* if you are stuck, use the MDN, so google something like, "paragraph italics in css mdn" */
+
+/*vocabulary matters */
+/* So below is a "rule", the p is a selector, and then there are two declarations in a declaration block. Each declaration has a property and a value. */
+p{
+    color:rgb(62, 134, 110);
+    /* font-weight: bold; */
+    font-family: "Didact Gothic", "Helvetica", sans-serif;
+    font-size: 1.5rem;
+
+}
+/* css is read from top to bottom and is called a cascade. So what comes below can override what came above */
+/* I decided to put my paragraphs into a class called pClass. then I can control the color of the pClass as follows. */
+/* you could replace .pClass with p and just have all paragraphs be a certain color */
+
+/* Box Model Hack allows your measurement to be inclusive of padding and border*/
+* {
+    box-sizing: border-box;
+  }
+
+/* Clear fix hack note that you have to add the class to the html element in order for it to clear fix */
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clear {
+   clear: both;
+}
+
+/* so I want my site nav to be reactive and I will have to use floats. I want the li's to shrink and expand with the window */
+
+.siteNav{
+    text-align: center;
+}
+
+.siteNavLi{
+    display:inline-block;
+    padding: 20px;
+}
+
+.secOfSec{
+    Width:100%;
+    float:left;
+    background-color: rgb(77, 90, 109);
+}
+
+.secOfText{
+    float:right;
+    width:50%;
+    padding:1%;
+}
+
+.secOfText p {
+    color:whitesmoke;
+}
+
+.secOfImage{
+    float:left;
+    width:50%;
+    text-align: center;
+}
+
+.imgClass{
+    width:90%;
+    padding:10%;
+}
+
+h1{
+    text-align: center;
+    width: 100%;
+}
+
+h2{
+    text-align: left;
+    float:left;
+    font-size: 1.5rem;
+    color: rgb(77, 90, 109);
+    width:100%;
+    padding: 1%;
+}
+
+.theEarlyYears{
+    float:left;
+}
+
+.theEarlyYears h3 {
+    width:100%;
+    color: rgb(77, 90, 109);
+    font-size: 1.3rem;
+    padding:0%;
+    margin:0%;
+}
+
+.theEarlyYears section ul{
+    width:100%;
+    float:left;
+    padding:0;
+    /* border: 5px solid black; */
+}
+
+.theEarlyYears ul li {
+    float: left;
+    width:25%;
+    list-style: none;
+}
+
+.theEarlyYears  ul > li img {
+    height:auto;
+    max-width:100%;
+}
+
+.endOfHighschool {
+    background-color: rgb(77, 90, 109);
+    float:left;
+}
+
+.endOfHighschool h3 {
+    width:100%;
+    color: white;
+    font-size: 1.3rem;
+    padding:0%;
+    margin:0%;
+}
+
+.endOfHighschool section ul{
+    width:100%;
+    float:left;
+    padding:0;
+}
+
+.endOfHighschool ul li {
+    float: left;
+    width:25%;
+    list-style: none;
+}
+
+.endOfHighschool  ul > li img {
+    height:auto;
+    max-width:100%;
+}
+
+.endOfHighschool p {
+    color:white;
+}
+
+
+
+
+
+
+footer{
+    float:left;
+    background-color: rgb(77, 90, 109);
+}
+footer * {
+    float:left;
+}
+.footerLeftSide{
+    width:50%
+}
+.footerIconUl{
+    width:26%;
+    margin:2% 0 0 0;
+    padding:0;
+}
+.footerIconUl li{
+    float: left;
+    width: 33.33%;
+    list-style: none;
+}
+.footerIconUl li img {
+    height: auto;
+    max-width: 100%;
+}
+footer section section{
+    width: 100%;
+    margin:0 0 0 2%;
+}
+footer section section *{
+    list-style: none;
+    float:left;
+    width:100%;
+    padding:0;
+    margin:0;
+}
+footer section section h6{
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.footerContactInfo{
+    float:right;
+    width:50%;
+}
+.footerContactInfo *{
+    width:100%;
+    padding:0;
+    margin:0 0 0 60%;
+}
+.footerContactInfo h6 {
+    margin-top:10%;
+}
+
+
+
+/* now I need to use media queries to make it work on a cell phone */
+
+
+@media all and (max-width: 175px) {
+    body{
+        display: none;
+    }
+}
+
+@media (min-width: 175px) and (max-width: 375px){
+    .secOfSec{
+        background-color: green;
+    }    
+    .secOfImage{
+        background-color: green;
+        width:100%;
+    }
+    .secOfText{
+        background-color: green;
+        width:100%;
+    }
+    .siteNavLi a{
+        display:none;
+    }
+}
