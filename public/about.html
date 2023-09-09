@@ -1,145 +1,288 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="description" content="Your description goes here">
-        <meta name="keywords" content="one, two, three">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Sam-Hogue</title>
-        <!-- external CSS link -->
-        <link rel="stylesheet" href="./css/normalize.css">
-        <link rel="stylesheet" href="./css/aboutStyle.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Your description goes here" />
+    <meta name="keywords" content="one, two, three" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sam-Hogue</title>
+    <!-- external CSS link -->
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/aboutStyle.css" />
 
-        <!-- if you want a font, you have to link to it in your head, so we will do that here -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <!-- pick a new font, this is just for testing -->
-        <link href="https://fonts.googleapis.com/css2?family=Borel&family=Didact+Gothic&family=Montserrat:ital,wght@1,300&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <header>
-            <!-- below is the navigation tag. I am going to set it up but the anchor tags will not go anywhere right now. -->
-            <nav>
-                <ul class="siteNav">
-                    <!-- below is the form tag. not used yet but needs to be learned -->
-                    <li class = "siteNavLi">
-                        <form>
-                            <label for="zebra">Search:</label>
-                            <input id="zebra" type="text">
-                        </form>                    
-                    </li>
-                    <li class = "siteNavLi"><a href = "#">resume</a></li>
-                    <li class = "siteNavLi"><a href = "#">projects</a></li>
-                    <li class = "siteNavLi"><a href = "#">interests</a></li>
-                    <li class = "siteNavLi"><a href = "#">recipes</a></li>
-                    <li class = "siteNavLi"><a href = "#">other</a></li>
-                    <!-- I need a form for a search bar and then it will contain an input but I will do this later -->
-                </ul> 
-            </nav>
-        </header>
+    <!-- if you want a font, you have to link to it in your head, so we will do that here -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- pick a new font, this is just for testing -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Borel&family=Didact+Gothic&family=Montserrat:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+  </head>
+  <body>
+    <header>
+      <!-- below is the navigation tag. I am going to set it up but the anchor tags will not go anywhere right now. -->
+      <nav>
+        <ul class="siteNav">
+          <!-- below is the form tag. not used yet but needs to be learned -->
+          <li class="siteNavLi">
+            <form>
+              <label for="zebra">Search:</label>
+              <input id="zebra" type="text" />
+            </form>
+          </li>
+          <li class="siteNavLi"><a href="./">home</a></li>
+          <li class="siteNavLi"><a href="./resume.html">resume</a></li>
+          <li class="siteNavLi"><a href="#">blog</a></li>
+          <li class="siteNavLi"><a href="#">recipes</a></li>
+          <!-- I need a form for a search bar and then it will contain an input but I will do this later -->
+        </ul>
+      </nav>
+      <div class="mobileNav"><i class="material-symbols-outlined">menu</i></div>
+    </header>
 
-        <section class="secOfSec">
-            <section class="secOfImage" id="sec1">
-                <img
-                    class = "imgClass"
-                    src="sam-image.jpg"
-                    alt="this is a picture of Sam Hogue."    
-                />
-                <h4 class="imgCaption">Photo by: Kelsey Hogue</h4>
-            </section>
-            <section class="secOfText">
-                <h1>Sam Hogue</h1>
-                <P>this is a summary all about how my life got turned upside down. I'd like to take a minute to let you in, let me tell you how I became the father of my twins. You can go back even further in the timeline below but for now, let's start in march of 2022. That is when the twins were born which led me to be a stay at home dad in June of 2022. From there, I started to consider my future and my past 8 years as a protective relay engineer. I realized that the power industry was not conducive to a healthy family life in our situation. I decided to get into web development. I had done plenty of coding before but most of it was unstructured, unorganized, and for a singular purpose which made it lack decent code layout techniques.</P>
-            </section>
-        </section>
-
-        <h2>Timeline</h2>
-
-        <section class="theEarlyYears">
-            <h3>1992-2008: The Early Years</h3>
-            <section>
-                <ul>
-                    <li><img src="sam-image.jpg" alt="childhood small image"/></li>
-                    <li><img src="sam-image.jpg" alt="childhood small image"/></li>
-                    <li><img src="sam-image.jpg" alt="childhood small image"/></li>
-                    <li><img src="sam-image.jpg" alt="childhood small image"/></li>
-                </ul>
-            </section>
-            <p> I was born in 1992 which makes me a crazy millenial, if I am not mistaken. I was born in Connecticut where I lived until 2008 with my family. During my childhood, I loved to take things apart to figure out how they worked, although, at that time, I struggled to put them back together. I also loved to be outdoors and on the computer. I am the third of 4 kids, three of which are boys and one girl. I played soccer and hockey up until highschool. Then I decided to just play hockey in highschool. In middle school and highschool, I found myself both excelling and enjoying math and science because I had a drive to problem solve. This ultimately led me to choose electrical engineering for a college major.
-            </p>
-        </section>
-
-        <section class="endOfHighschool">
-            <h3>2008-2010: The End of an Era</h3>
-            <section>
-                <ul>
-                    <li><img src="sam-image.jpg" alt="childhood small image"/></li>
-                    <li><img src="sam-image.jpg" alt="childhood small image"/></li>
-                    <li><img src="sam-image.jpg" alt="childhood small image"/></li>
-                    <li><img src="sam-image.jpg" alt="childhood small image"/></li>
-                </ul>
-            </section>
-            <p> In 2008, my family moved to Bozeman, Montana. I finished my highschool years in Montana. I enjoyed skiing, hiking, mountain biking, and camping as much as I could during these years. My parents also enjoyed these activities so we got to do them as a family as well. I worked construction , as well as at a subway and a taco time during this period.
-            </p>
-        </section>
-
-
-        <h2>Personal Summary</h2>
-        <p class="pClass">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, quae id commodi deleniti debitis nam non neque iure eos quis repudiandae recusandae asperiores? Ullam expedita rerum odit dicta voluptate maiores.
+    <section class="introSec">
+      <section class="samImageSec">
+        <img
+          class="samImage"
+          src="sam-image.jpg"
+          alt="this is a picture of Sam Hogue."
+        />
+      </section>
+      <section class="introText">
+        <h1>Sam Hogue</h1>
+        <p>
+          This is a summary all about how my life got turned upside down. I'd
+          like to take a minute to let you in, let me tell you how I became the
+          father of my twins. You can go back even further in the timeline below
+          but for now, let's start in march of 2022. That is when the twins were
+          born which led me to be a stay at home dad in June of 2022. From
+          there, I started to consider my future and my past 8 years as a
+          protective relay engineer. I realized that the power industry was not
+          conducive to a healthy family life in our situation. I decided to get
+          into web development. I had done plenty of coding before but most of
+          it was unstructured, unorganized, and for a singular purpose which
+          made it lack decent code layout techniques.
         </p>
+      </section>
+    </section>
 
+    <!-- instead of doing a blog of my history, I think I should just put some interests in here -->
 
-        <h3>Span Time</h3>
-        <span>This is a span</span>
+    <h2>Some of my memorable moments</h2>
 
-        <h2>Directions</h2>
-        <ol>
-            <li>Open up the website.</li>
-            <li>Look around and read some things.</li>
-            <li>Explore.</li>
-            <li>Leave.</li>
-        </ol>
+    <section class="whiteBackground">
+      <h3>My Wedding Day</h3>
+      <section>
+        <ul>
+          <li>
+            <img
+              class="whiteBackgroundImage"
+              src="kelseySamHogue-234.jpg"
+              alt="childhood small image"
+            />
+          </li>
+          <li>
+            <img
+              class="whiteBackgroundImage"
+              src="kelseySamHogue-179.jpg"
+              alt="childhood small image"
+            />
+          </li>
+          <li>
+            <img
+              class="whiteBackgroundImage"
+              src="kelseySamHogue-262.jpg"
+              alt="childhood small image"
+            />
+          </li>
+          <li>
+            <img
+              class="whiteBackgroundImage"
+              src="kelseySamHogue-257.jpg"
+              alt="childhood small image"
+            />
+          </li>
+        </ul>
+      </section>
+      <p>
+        My wedding was one of the most memorable days of my life. I married the
+        woman of my dreams and it was the start of the greatest adventure I have
+        ever embarked on. We were lucky enough to have friends and family to
+        celebrate with us and enjoyed good food and some fun dancing.
+      </p>
+    </section>
 
-        <p>The link to my web page is <a href = "#">here.</a></p> 
-        <!-- cool note, "#" in a link just brings you to the top of the page. -->
-		
-        <footer>
-            <!-- I want some things in my footer, but I don't know what I want. -->
-            <section class="footerLeftSide">
-                <section class="footerIconSection">
-                    <ul class="footerIconUl">
-                        <li><a href="#"><img src="sam-image.jpg" alt="f link"/></a></li>
-                        <li><a href="#"><img src="sam-image.jpg" alt="t link"/></a></li>
-                        <li><a href="#"><img src="sam-image.jpg" alt="em link"/></a></li>
-                    </ul>
-                </section>
-                <section class="footerSiteMap">
-                    <h6>Site Map</h6>
-                    <ul>
-                        <li><a href="#">click me</a></li>
-                        <li><a href="#">hire me</a></li>
-                    </ul>
-                </section>
-                <section>
-                    <h6>Something Else</h6>
-                    <ul>
-                        <li><a href="#">click me</a></li>
-                        <li><a href="#">are you feeling lucky?</a></li>
-                    </ul>
-                </section>
-            </section>
-            <section class="footerContactInfo">
-                <h6>Sam Hogue</h6>
-                <span>eugohmas@gmail.com</span>
-                <span>406-459-1970</span>
-            </section>
+    <section class="blueBackground">
+      <h3>The Birth of my Daughter</h3>
+      <section>
+        <ul>
+          <li>
+            <img
+              class="blueBackgroundImage"
+              src="lilly1.jpg"
+              alt="childhood small image"
+            />
+          </li>
+          <li>
+            <img
+              class="blueBackgroundImage"
+              src="lilly2.jpg"
+              alt="childhood small image"
+            />
+          </li>
+          <li>
+            <img
+              class="blueBackgroundImage"
+              src="lilly3.jpg"
+              alt="childhood small image"
+            />
+          </li>
+          <li>
+            <img
+              class="blueBackgroundImage"
+              src="lilly4.jpg"
+              alt="childhood small image"
+            />
+          </li>
+        </ul>
+      </section>
+      <p>
+        Lilly was born. Lilly is our first born and was a challenging baby. She
+        has changed our world for the better. It has been an amazing journey
+        learning how to parent her and will continue to be wonderful growing
+        with her as a part of our family. She was born in July of 2020 and it
+        already seems like she is growing up too fast. I love spending quality
+        time with my kids.
+      </p>
+    </section>
 
-        </footer>
+    <section class="whiteBackground">
+      <h3>The Birth of the Twins</h3>
+      <section>
+        <ul>
+          <li>
+            <img
+              class="whiteBackgroundImage"
+              src="twins1.jpg"
+              alt="childhood small image"
+            />
+          </li>
+          <li>
+            <img
+              class="whiteBackgroundImage"
+              src="twins2.jpg"
+              alt="childhood small image"
+            />
+          </li>
+          <li>
+            <img
+              class="whiteBackgroundImage"
+              src="twins3.jpg"
+              alt="childhood small image"
+            />
+          </li>
+          <li>
+            <img
+              class="whiteBackgroundImage"
+              src="twins4.jpg"
+              alt="childhood small image"
+            />
+          </li>
+        </ul>
+      </section>
+      <p>
+        The twins were born in march of 2022. We were not expecting to have
+        twins but here we are. Cameron and Ezekial were born two months early
+        and spent almost that amount of time in the NICU. We thought we had this
+        parenting thing down until the twins came along. They have shown us what
+        a true lack of sleep lifestyle actually looks like while making us love
+        them more and more each day.
+      </p>
+    </section>
 
-
-        <!-- using the box model, you have width, padding, border, and then margin -->		
-
-    </body>
+    <section class="blueBackground">
+      <h3>Other Interests Part 1</h3>
+      <section>
+        <ul>
+          <li>
+            <img
+              class="blueBackgroundImage"
+              src="other1.jpg"
+              alt="childhood small image"
+            />
+          </li>
+          <li>
+            <img
+              class="blueBackgroundImage"
+              src="other2.jpg"
+              alt="childhood small image"
+            />
+          </li>
+          <li>
+            <img
+              class="blueBackgroundImage"
+              src="other3.jpg"
+              alt="childhood small image"
+            />
+          </li>
+          <li>
+            <img
+              class="blueBackgroundImage"
+              src="other4.jpg"
+              alt="childhood small image"
+            />
+          </li>
+        </ul>
+      </section>
+      <p>
+        My life revolves mostly around my family now, but the kids are starting
+        to get into more and more activities. When we are not out with the kids,
+        we can often be found at home playing board games or reading books. I
+        also spend a large amount of time taking care of our old house and
+        trying to keep the current project list at bay.
+      </p>
+    </section>
+    <footer>
+      <!-- I want some things in my footer, but I don't know what I want. -->
+      <section class="footerLeftSide">
+        <section class="footerIconSection">
+          <ul class="footerIconUl">
+            <li>
+              <a href="#"><img src="sam-image.jpg" alt="f link" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="sam-image.jpg" alt="t link" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="sam-image.jpg" alt="em link" /></a>
+            </li>
+          </ul>
+        </section>
+        <section class="footerSiteMap">
+          <h6>Site Map</h6>
+          <ul>
+            <li><a href="#">click me</a></li>
+            <li><a href="#">hire me</a></li>
+          </ul>
+        </section>
+        <section>
+          <h6>Something Else</h6>
+          <ul>
+            <li><a href="#">click me</a></li>
+            <li><a href="#">are you feeling lucky?</a></li>
+          </ul>
+        </section>
+      </section>
+      <section class="footerContactInfo">
+        <h6>Sam Hogue</h6>
+        <span>eugohmas@gmail.com</span>
+        <span>406-459-1970</span>
+      </section>
+    </footer>
+  </body>
 </html>
-
-

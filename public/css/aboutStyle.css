@@ -2,12 +2,11 @@
 
 /*vocabulary matters */
 /* So below is a "rule", the p is a selector, and then there are two declarations in a declaration block. Each declaration has a property and a value. */
-p{
-    color:rgb(62, 134, 110);
-    /* font-weight: bold; */
-    font-family: "Didact Gothic", "Helvetica", sans-serif;
-    font-size: 1.5rem;
-
+* {
+  color: rgb(57, 57, 95);
+  /* font-weight: bold; */
+  font-family: "Didact Gothic", "Helvetica", sans-serif;
+  font-size: 1rem;
 }
 /* css is read from top to bottom and is called a cascade. So what comes below can override what came above */
 /* I decided to put my paragraphs into a class called pClass. then I can control the color of the pClass as follows. */
@@ -15,220 +14,199 @@ p{
 
 /* Box Model Hack allows your measurement to be inclusive of padding and border*/
 * {
-    box-sizing: border-box;
-  }
+  box-sizing: border-box;
+}
 
 /* Clear fix hack note that you have to add the class to the html element in order for it to clear fix */
 .clearfix:after {
-    content: ".";
-    display: block;
-    clear: both;
-    visibility: hidden;
-    line-height: 0;
-    height: 0;
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
 }
 
 .clear {
-   clear: both;
+  clear: both;
 }
 
 /* so I want my site nav to be reactive and I will have to use floats. I want the li's to shrink and expand with the window */
 
-.siteNav{
-    text-align: center;
+/* with flex, you have the following
+first you define a flex container with display:flex;
+then you align the items in that container using the following:
+1) justify-content: aligns flex items along the main axis
+2) align-items: aligns flex items along the cross axis
+3) flex-direction: defines the direction of the main axis
+4) order: specifies the order of the flex items
+5) align-self: aligns a flex item along the cross axis, over-riding align items
+6) flex-wrap: specifies whether flex items are forced on a single line or can be wrapped on multiple lines
+7) flex-flow: shorthand property for flex-direction and flex-wrap
+8) align-content: aligns a flex containers lines within the flex container when there is extra space on the cross axis
+
+THERE ARE SO MANY MORE FLEX OPTIONS AS WELL. JUST LOOK UP THE MDN FOR HELP*/
+ul {
+  list-style: none;
 }
 
-.siteNavLi{
-    display:inline-block;
-    padding: 20px;
+.siteNav {
+  list-style: none;
+  margin: 1vw;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.secOfSec{
-    Width:100%;
-    float:left;
-    background-color: rgb(77, 90, 109);
+header div {
+  display: none;
 }
 
-.secOfText{
-    float:right;
-    width:50%;
-    padding:1%;
+.introSec {
+  background-color: rgb(57, 57, 95);
+  margin: 1vw;
+  display: flex;
+  justify-content: space-around;
 }
 
-.secOfText p {
-    color:whitesmoke;
+.samImage {
+  width: 90%;
+  margin: 2vw;
+  max-width: 300px;
+}
+.introText {
+  margin: 0vw;
+  width: 60%;
+}
+.introText h1 {
+  text-align: center;
+  color: white;
+}
+.introText p {
+  color: white;
 }
 
-.secOfImage{
-    float:left;
-    width:50%;
-    text-align: center;
+h2 {
+  text-align: center;
+  font-size: 1.5rem;
 }
 
-.imgClass{
-    width:90%;
-    padding:10%;
+/* Now I need to add my repetitive sections there will be two types, one with a white background and one with a blue background this one has the white background */
+.whiteBackground section ul {
+  margin: 0vw;
+  padding: 2vw;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.whiteBackground h3 {
+  text-align: center;
+  font-size: 1.2rem;
+}
+.whiteBackgroundImage {
+  width: 90%;
+}
+.whiteBackground p {
+  margin: 2vw;
 }
 
-h1{
-    text-align: center;
-    width: 100%;
+/* now we need one with a blue background */
+.blueBackground {
+  background-color: rgb(57, 57, 95);
+}
+.blueBackground section ul {
+  margin: 0vw;
+  padding: 2vw;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.blueBackground h3 {
+  text-align: center;
+  font-size: 1.2rem;
+  color: white;
+}
+.blueBackgroundImage {
+  width: 90%;
+}
+.blueBackground p {
+  margin: 2vw;
+  color: white;
 }
 
-h2{
-    text-align: left;
-    float:left;
-    font-size: 1.5rem;
-    color: rgb(77, 90, 109);
-    width:100%;
-    padding: 1%;
-}
-
-.theEarlyYears{
-    float:left;
-}
-
-.theEarlyYears h3 {
-    width:100%;
-    color: rgb(77, 90, 109);
-    font-size: 1.3rem;
-    padding:0%;
-    margin:0%;
-}
-
-.theEarlyYears section ul{
-    width:100%;
-    float:left;
-    padding:0;
-    /* border: 5px solid black; */
-}
-
-.theEarlyYears ul li {
-    float: left;
-    width:25%;
-    list-style: none;
-}
-
-.theEarlyYears  ul > li img {
-    height:auto;
-    max-width:100%;
-}
-
-.endOfHighschool {
-    background-color: rgb(77, 90, 109);
-    float:left;
-}
-
-.endOfHighschool h3 {
-    width:100%;
-    color: white;
-    font-size: 1.3rem;
-    padding:0%;
-    margin:0%;
-}
-
-.endOfHighschool section ul{
-    width:100%;
-    float:left;
-    padding:0;
-}
-
-.endOfHighschool ul li {
-    float: left;
-    width:25%;
-    list-style: none;
-}
-
-.endOfHighschool  ul > li img {
-    height:auto;
-    max-width:100%;
-}
-
-.endOfHighschool p {
-    color:white;
-}
-
-
-
-
-
-
-footer{
-    float:left;
-    background-color: rgb(77, 90, 109);
+footer {
+  float: left;
+  background-color: rgb(57, 57, 95);
 }
 footer * {
-    float:left;
+  float: left;
+  color: white;
 }
-.footerLeftSide{
-    width:50%
+.footerLeftSide {
+  width: 50%;
 }
-.footerIconUl{
-    width:26%;
-    margin:2% 0 0 0;
-    padding:0;
+.footerIconUl {
+  width: 26%;
+  margin: 2% 0 0 0;
+  padding: 0;
 }
-.footerIconUl li{
-    float: left;
-    width: 33.33%;
-    list-style: none;
+.footerIconUl li {
+  float: left;
+  width: 33.33%;
+  list-style: none;
 }
 .footerIconUl li img {
-    height: auto;
-    max-width: 100%;
+  height: auto;
+  max-width: 100%;
 }
-footer section section{
-    width: 100%;
-    margin:0 0 0 2%;
+footer section section {
+  width: 100%;
+  margin: 0 0 0 2%;
 }
-footer section section *{
-    list-style: none;
-    float:left;
-    width:100%;
-    padding:0;
-    margin:0;
+footer section section * {
+  list-style: none;
+  float: left;
+  width: 100%;
+  padding: 0;
+  margin: 0;
 }
-footer section section h6{
-    padding-top: 2%;
-    padding-bottom: 2%;
+footer section section h6 {
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
-.footerContactInfo{
-    float:right;
-    width:50%;
+.footerContactInfo {
+  float: right;
+  width: 50%;
 }
-.footerContactInfo *{
-    width:100%;
-    padding:0;
-    margin:0 0 0 60%;
+.footerContactInfo * {
+  width: 100%;
+  padding: 0;
+  margin: 0 0 0 60%;
 }
 .footerContactInfo h6 {
-    margin-top:10%;
+  margin-top: 10%;
 }
 
-
-
-/* now I need to use media queries to make it work on a cell phone */
-
-
-@media all and (max-width: 175px) {
-    body{
-        display: none;
-    }
+@media all and (max-width: 800px) {
+  .introSec {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .introText {
+    width: 95%;
+  }
 }
 
-@media (min-width: 175px) and (max-width: 375px){
-    .secOfSec{
-        background-color: green;
-    }    
-    .secOfImage{
-        background-color: green;
-        width:100%;
-    }
-    .secOfText{
-        background-color: green;
-        width:100%;
-    }
-    .siteNavLi a{
-        display:none;
-    }
+@media all and (max-width: 400px) {
+  header div {
+    display: block;
+  }
+  header nav {
+    display: none;
+  }
 }
